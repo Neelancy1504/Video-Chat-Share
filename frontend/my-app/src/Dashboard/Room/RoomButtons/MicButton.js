@@ -1,20 +1,43 @@
 import React, { useState } from "react";
-import { IconButton } from "@mui/material";
-import Mic from "@mui/icons-material/Mic";
-import MicOff from "@mui/icons-material/MicOff";
+import IconButton from "@mui/material/IconButton";
+import MicIcon from "@mui/icons-material/Mic";
+import MicOffIcon from "@mui/icons-material/MicOff";
 
-const MicButton = () => {
-  const [MicEnabled, setMicEnabled] = useState(true);
+const MicButton = ({ localStream }) => {
+  const [micEnabled, setMicEnabled] = useState(true);
 
   const handleToggleMic = () => {
-    setMicEnabled(!MicEnabled);
+    localStream.getAudioTracks()[0].enabled = !micEnabled;
+    setMicEnabled(!micEnabled);
   };
 
   return (
-    <IconButton onClick={handleToggleMic} style={{color: 'white'}}>
-      {MicEnabled ? <Mic /> : <MicOff />}
+    <IconButton onClick={handleToggleMic} style={{ color: "white" }}>
+      {micEnabled ? <MicIcon /> : <MicOffIcon />}
     </IconButton>
   );
 };
 
 export default MicButton;
+
+
+// import React, { useState } from "react";
+// import { IconButton } from "@mui/material";
+// import Mic from "@mui/icons-material/Mic";
+// import MicOff from "@mui/icons-material/MicOff";
+
+// const MicButton = () => {
+//   const [MicEnabled, setMicEnabled] = useState(true);
+
+//   const handleToggleMic = () => {
+//     setMicEnabled(!MicEnabled);
+//   };
+
+//   return (
+//     <IconButton onClick={handleToggleMic} style={{color: 'white'}}>
+//       {MicEnabled ? <Mic /> : <MicOff />}
+//     </IconButton>
+//   );
+// };
+
+// export default MicButton;
