@@ -7,17 +7,18 @@ const MainContainer = styled("div")({
   width: "98%",
   display: "column",
   marginTop: "10px",
+  paddingLeft: "10px",
 });
 
 const MessagesHeader = ({ name = "" }) => {
   return (
     <MainContainer>
-      <Avatar large username={name}  sx={{ marginLeft: "10px" }}/>
+      <Avatar large username={name}  sx={{ paddingLeft: "10px"}}/>
       <Typography
         variant="h4"
         sx={{
           fontWeight: "bold",
-          color: "white",
+          color: "#2f2f2f",
           marginLeft: "10px",
           marginRight: "5px",
           padding: '5px'
@@ -29,7 +30,7 @@ const MessagesHeader = ({ name = "" }) => {
       <Typography
         variant= 'h7'
         sx={{ 
-            color: "#b9bbbe", 
+            color: "#808080", 
             marginLeft: "15px", 
             marginRight: "5px" 
             }}

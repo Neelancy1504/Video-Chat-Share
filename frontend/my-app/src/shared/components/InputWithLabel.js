@@ -10,10 +10,11 @@ const Wrapper = styled("div")({
 });
 
 const Label = styled("p")({
-  color: "#b9bbbe",
+  color: "#3A3B3C",
   textTransform: "uppercase",
   fontWeight: "600",
-  fontSize: "16px",
+  fontSize: "17px",
+  paddingBottom: '10px',
 });
 
 const Input = styled("input")({
@@ -21,8 +22,8 @@ const Input = styled("input")({
   height: "40px",
   border: "1px solid black",
   borderRadius: "5px",
-  color: "#dcddde",
-  background: "#35393f",
+  color: "#3A3B3C",
+  background: "white",
   margin: 0,
   fontSize: "16px",
   padding: "0 5px",

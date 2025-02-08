@@ -19,7 +19,8 @@ const MessageContainer = styled("div")({
 });
 
 const MessageContent = styled("div")({
-  color: "#dcddde",
+  color: "#3A3B3C",
+  fontSize: "17px",
 });
 
 const SameAuthorMessageContent = styled("div")({
@@ -42,11 +43,11 @@ const Msg = ({ content, sameAuthor, username, date, sameDay }) => {
   }
   return (
     <MainContainer>
-      <AvatarContainer>
+      <AvatarContainer style={{paddingLeft: "10px"}}>
         <Avatar username={username} />
       </AvatarContainer>
       <MessageContainer>
-        <Typography style={{ fontSize: "16px", color: "white" }}>
+        <Typography style={{ fontSize: "16px", color: "#3A3B3C" , fontWeight: "600"}}>
             {username}{' '}
             <span style={{ fontSize: "12px", color: "#72767d" }}>{date}</span>
         </Typography>

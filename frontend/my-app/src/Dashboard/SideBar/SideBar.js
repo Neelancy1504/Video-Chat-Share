@@ -11,7 +11,8 @@ const MainContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundColor: "#202225",
+  backgroundColor: "rgb(6, 94, 171)",
+  borderTop: '1px solid #808080'
 });
 
 const SideBar = ({ activeRooms, isUserInRoom }) => {

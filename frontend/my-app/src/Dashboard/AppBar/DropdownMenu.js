@@ -24,7 +24,7 @@ const BasicMenu = ({ audioOnly, setAudioOnly }) => {
 
   return (
     <div>
-      <IconButton onClick={handleMenuOpen} style={{ color: "white" }}>
+      <IconButton onClick={handleMenuOpen} style={{ color: "#3A3B3C" }}>
         <MoreVertIcon />
       </IconButton>
       <Menu

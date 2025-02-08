@@ -10,10 +10,11 @@ const InputsContainer = styled('div')({
   //marginBottom: '5px' // Adds space below the entire inputs section
 })
 
+
 const LoginPageInputs = ({mail , setMail , password , setPassword}) => {
   return (
   <InputsContainer>
-      <InputWithLabel
+      <InputWithLabel 
         value = {mail}
         setValue = {setMail}
         label="E-mail"

@@ -42,7 +42,7 @@ const PendingInvitationsListItem = ({
                 sx= {{
                     marginLeft: "7px",
                     fontWeight: '700',
-                    color: '#8e9297',
+                    color: 'yellow',
                     flexGrow: 1,
                 }}
                 variant='subtitle1'
