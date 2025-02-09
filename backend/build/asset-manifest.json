@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef3ff024.css",
+    "main.js": "/static/js/main.a210fe60.js",
+    "static/media/bubble-profile-page.png": "/static/media/bubble-profile-page.b95903946a6f4e34f3a2.png",
+    "static/media/loginpage.png": "/static/media/loginpage.d424799073040b7b99e5.png",
+    "static/media/bg-discord-blue-more-shape.png": "/static/media/bg-discord-blue-more-shape.eb2d189733b3b875b510.png",
+    "static/media/new-logo2.png": "/static/media/new-logo2.491cc5b40d05dcb7ef12.png",
+    "index.html": "/index.html",
+    "main.ef3ff024.css.map": "/static/css/main.ef3ff024.css.map",
+    "main.a210fe60.js.map": "/static/js/main.a210fe60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef3ff024.css",
+    "static/js/main.a210fe60.js"
+  ]
+}
