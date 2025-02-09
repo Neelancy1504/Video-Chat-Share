@@ -2,7 +2,7 @@ import axios from "axios";
 import { logout } from "./shared/utils/auth";
 
 const apiClient = axios.create({
-    baseURL: 'https://video-chat-share-jzxy.vercel.app', // Corrected key to 'baseURL'
+    baseURL: 'https://video-chat-share.onrender.com', // Corrected key to 'baseURL'
     timeout: 1000, // Request timeout in milliseconds
     headers: {
         'Content-Type': 'application/json', // Ensure JSON request
