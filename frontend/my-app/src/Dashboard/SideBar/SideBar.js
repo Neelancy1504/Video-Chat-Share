@@ -4,6 +4,7 @@ import MainPageButton from "./MainPageButton";
 import CreateRoomButton from "./CreateRoomButton";
 import { connect } from "react-redux";
 import ActiveRoomButton from "./ActiveRoomButton";
+import WebsiteLogo from "./WebsiteLogo";
 
 const MainContainer = styled("div")({
   width: "72px",
@@ -18,6 +19,7 @@ const MainContainer = styled("div")({
 const SideBar = ({ activeRooms, isUserInRoom }) => {
   return (
     <MainContainer>
+      <WebsiteLogo />
       <MainPageButton />
       <CreateRoomButton isUserInRoom={isUserInRoom} />
       {activeRooms.map((room) => (

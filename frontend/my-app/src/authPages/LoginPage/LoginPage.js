@@ -9,6 +9,7 @@ import { validateLoginForm } from '../../shared/utils/validators';
 import { connect } from 'react-redux';
 import { getActions } from '../../store/actions/authActions';
 import { useNavigate } from 'react-router-dom';
+import WebsiteLogo from '../../Dashboard/SideBar/WebsiteLogo';
 
 // Styled components for the new UI
 const LoginWrapper = styled('div')({
@@ -36,7 +37,9 @@ const FormSection = styled(Box)({
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'left',
     padding: '0 32px',
+    //backgroundColor: 'yellow',
 });
 
 const ImageSection = styled(Box)({
@@ -70,6 +73,7 @@ const LoginPage = ({ login }) => {
         <LoginWrapper>
             <LoginContainer>
                 <FormSection>
+                    <WebsiteLogo />
                     <LoginPageHeader />
                     <LoginPageInputs
                         mail={mail}
