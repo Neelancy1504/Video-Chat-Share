@@ -16,7 +16,7 @@ app.use(express.json());
 //app.use(cors());
 //app.use(cors({ origin: 'https://video-chat-share-jzxy.vercel.app', credentials: true }));
 app.use(cors({
-    origin: ['https://video-chat-share.vercel.app', 'http://localhost:3000'], // Add your frontend domain
+    origin: ['https://video-chat-share.vercel.app'], // Add your frontend domain
     credentials: true
 }));
 
