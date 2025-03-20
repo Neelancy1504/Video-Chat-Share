@@ -3,7 +3,7 @@ import { logout } from "./shared/utils/auth";
 
 const apiClient = axios.create({
     baseURL: 'https://video-chat-share.onrender.com', // Corrected key to 'baseURL'
-    timeout: 5000, // Request timeout in milliseconds
+    timeout: 10000, // Request timeout in milliseconds
     headers: {
         'Content-Type': 'application/json', // Ensure JSON request
     },

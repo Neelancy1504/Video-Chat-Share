@@ -13,43 +13,63 @@ import WebsiteLogo from '../../Dashboard/SideBar/WebsiteLogo';
 
 // Styled components for the new UI
 const LoginWrapper = styled('div')({
-    width: '100%',
+    width: '100%',  // Changed from 90%
     height: '100vh',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)'
+    background: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)',
+    padding: '20px'  // Added padding for smaller screens
 });
 
-const LoginContainer = styled(Box)({
-    width: '65%',
-    height: '75%',
+const LoginContainer = styled(Box)(({ theme }) => ({
+    width: '90%',
+    maxWidth: '1200px',  // Added max-width
+    height: 'auto',      // Changed from fixed height
+    minHeight: '75%',
     backgroundColor: 'white',
     borderRadius: '35px',
     boxShadow: '0 8px 20px rgba(0, 0, 0, 0.12)',
     display: 'flex',
     flexDirection: 'row',
     padding: '25px',
-    overflow: 'hidden'
-});
+    overflow: 'hidden',
+    '@media (max-width: 768px)': {
+        flexDirection: 'column',
+        width: '100%',
+        padding: '15px'
+    }
+}));
 
-const FormSection = styled(Box)({
+const FormSection = styled(Box)(({ theme }) => ({
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'left',
     padding: '0 32px',
-    //backgroundColor: 'yellow',
-});
+    '@media (max-width: 768px)': {
+        padding: '0 15px',
+        alignItems: 'center'
+    }
+}));
 
-const ImageSection = styled(Box)({
+const ImageSection = styled(Box)(({ theme }) => ({
     width: '50%',
     height: '95%',
     display: 'flex',
     justifyContent: 'right',
     alignItems: 'right',
     marginBottom: '32px',
-});
+    '@media (max-width: 768px)': {
+        width: '100%',
+        height: 'auto',
+        marginTop: '20px',
+        justifyContent: 'center'
+    },
+    '@media (max-width: 480px)': {
+        display: 'none'  // Hide image on very small screens
+    }
+}));
 
 const LoginPage = ({ login }) => {
     const history = useNavigate();
@@ -96,6 +116,8 @@ const LoginPage = ({ login }) => {
                             maxHeight: '100%',
                             objectFit: 'contain',
                             borderRadius: '40px',
+                            width: 'auto',  // Added for better responsiveness
+                            height: 'auto'  // Added for better responsiveness
                         }}
                     />
                 </ImageSection>
